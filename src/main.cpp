@@ -574,7 +574,7 @@ int main()
     // 清理资源
     model.destroy();
 
-    if (surfaceVAO) glDeleteVertexArrays(1, &surfaceVAO);
+    if (surfaceVAO) glDeleteVertexArrays(1, &surfaceVAO); 
     if (surfaceVBO) glDeleteBuffers(1, &surfaceVBO);
     if (surfaceEBO) glDeleteBuffers(1, &surfaceEBO);
 
