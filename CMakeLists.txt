@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.10)
 project(CADViewer)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+# 生成 compile_commands.json
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # macOS Homebrew 前缀路径
 if(APPLE)
@@ -75,3 +77,4 @@ target_compile_definitions(CADViewer PRIVATE
     GL_SILENCE_DEPRECATION
     PROJECT_SOURCE_DIR="${CMAKE_SOURCE_DIR}"
 )
+# CMake运行：1: mkdir build; 2: cd build; 3: cmake ..; 4: make; 5: ./program_name;
